@@ -1,5 +1,3 @@
-
 http://monteirobrena.wordpress.com/2010/04/26/criando-um-projeto-com-ruby-on-rails/
-
+http://ruby-br.org/?p=2165
 http://guides.rubyonrails.org/testing.html
-
