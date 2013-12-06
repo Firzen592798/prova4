@@ -7,6 +7,9 @@ gem 'sqlite3'
 #Nokogiri
 gem 'nokogiri'
 
+#Rake
+gem 'rake' 
+
 #Use Coveralls
 gem 'coveralls', require: false
 
