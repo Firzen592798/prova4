@@ -122,6 +122,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
+  coveralls
   jquery-rails
   rails (= 4.0.1)
   rspec-rails
