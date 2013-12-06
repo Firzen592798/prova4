@@ -47,7 +47,6 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'coveralls', require: false
 end
 
 group :development do
