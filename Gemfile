@@ -1,11 +1,7 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
-# SQLLite3
-gem 'sqlite3'
 
-#Nokogiri
-gem 'nokogiri'
 
 #Rake
 gem 'rake' 
@@ -50,6 +46,12 @@ end
 
 # Use unicorn as the app server
 # gem 'unicorn'
+
+# SQLLite3
+gem 'sqlite3'
+
+#Nokogiri
+gem 'nokogiri'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
