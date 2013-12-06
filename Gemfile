@@ -43,3 +43,14 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+
+group :test do
+  gem 'rspec-rails'
+  gem 'coveralls', require: false
+end
+
+group :development do
+  gem 'sqlite3'
+  gem 'rspec-rails'
+end
