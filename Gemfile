@@ -51,5 +51,4 @@ end
 
 group :development do
   gem 'sqlite3'
-  gem 'rspec-rails'
 end
