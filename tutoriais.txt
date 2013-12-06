@@ -3,3 +3,4 @@ http://monteirobrena.wordpress.com/2010/04/26/criando-um-projeto-com-ruby-on-rai
 
 http://guides.rubyonrails.org/testing.html
 
+http://www.rubyinside.com/how-to-rails-3-and-rspec-2-4336.html
