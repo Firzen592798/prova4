@@ -13,13 +13,7 @@ class PostTest < ActiveSupport::TestCase
 	 
 	  assert_redirected_to post_path(assigns(:post))
 	end
-	
-	it "should create post" do
-		assert_difference('Post.count') do
-			post :create, post: {title: 'Some title'}
-		end
-			assert_redirected_to post_path(assigns(:post))
-	end
+
 	
 end
 

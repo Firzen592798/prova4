@@ -53,11 +53,17 @@ end
 
 
 group :test do
-  gem 'rspec-rails'
   gem 'simplecov'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda'
   gem 'coveralls', require: false
 end
 
 group :development do
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'magic_encoding', require: false
 end

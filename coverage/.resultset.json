@@ -3,19 +3,32 @@
     "coverage": {
       "C:/Users/augusto/Documents/GitHub/prova4/app/models/post.rb": [
         1,
+        1,
         null
       ],
       "C:/Users/augusto/Documents/GitHub/prova4/test/models/post_test.rb": [
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        0,
+        null,
         null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1386350571
+    "timestamp": 1386356001
   },
   "RSpec": {
     "coverage": {
@@ -36,6 +49,18 @@
         1,
         null,
         1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        0,
+        null,
         null,
         null,
         null,
@@ -176,6 +201,6 @@
         null
       ]
     },
-    "timestamp": 1386353501
+    "timestamp": 1386356107
   }
 }
