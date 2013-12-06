@@ -3,8 +3,8 @@ require 'test_helper'
 class PostsControllerTest < ActionController::TestCase
   setup do
     @post = posts(:one)
-  end
-
+  end  
+  
   test "should get index" do
     get :index
     assert_response :success

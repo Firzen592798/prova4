@@ -8,7 +8,7 @@ class PostTest < ActiveSupport::TestCase
 	
 	test "should create post" do
 	  assert_difference('Post.count') do
-		post :create, post: {title: 'Some title'}
+		post :create, post: {titulo: 'Titulo'}
 	  end
 	 
 	  assert_redirected_to post_path(assigns(:post))
@@ -16,7 +16,7 @@ class PostTest < ActiveSupport::TestCase
 	
 	it "should create post" do
 		assert_difference('Post.count') do
-			post :create, post: {title: 'Some title'}
+			post :create, post: {titulo: 'Titulo'}
 		end
 			assert_redirected_to post_path(assigns(:post))
 	end
