@@ -3,9 +3,6 @@ rvm:
   - 1.9.3
 env:
   - DB=sqlite
-before_install:
-  - gem update --system
-  - gem --version
 script:
   - rake test
   - bundle exec rspec
