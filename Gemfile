@@ -4,6 +4,9 @@ ruby '1.9.3'
 # SQLLite3
 gem 'sqlite3'
 
+#Nokogiri
+gem 'nokogiri'
+
 #Use Coveralls
 gem 'coveralls', require: false
 
