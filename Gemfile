@@ -62,7 +62,7 @@ gem 'nokogiri'
 
 group :test do
   gem 'simplecov'
-  gem 'capybara'
+#  gem 'capybara'
   gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
