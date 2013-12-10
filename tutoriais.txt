@@ -5,3 +5,5 @@ http://guides.rubyonrails.org/testing.html
 http://www.rubyinside.com/how-to-rails-3-and-rspec-2-4336.html
 
 http://ruby-br.org/?p=2165
+
+http://edgeguides.rubyonrails.org/active_record_validations.html

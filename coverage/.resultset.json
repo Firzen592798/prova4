@@ -36,6 +36,10 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "C:/Users/augusto/Documents/GitHub/prova4/app/models/post.rb": [
@@ -63,6 +67,13 @@
       ],
       "C:/Users/augusto/Documents/GitHub/prova4/test/models/cliente_test.rb": [
         1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         1,
         1,
@@ -238,11 +249,11 @@
         1,
         1,
         1,
+        0,
+        0,
+        null,
         2,
         1,
-        null,
-        0,
-        0,
         null,
         null,
         null,
@@ -353,6 +364,6 @@
         null
       ]
     },
-    "timestamp": 1386709687
+    "timestamp": 1386715248
   }
 }

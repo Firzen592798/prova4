@@ -14,14 +14,14 @@
       <img src="./assets/0.7.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-12-10T18:08:07-03:00">2013-12-10T18:08:07-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-12-10T19:40:48-03:00">2013-12-10T19:40:48-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">91.03%</span></span>
+    (<span class="covered_percent"><span class="green">91.5%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>13</b> files in total.
-    <b>145</b> relevant lines. 
-    <span class="green"><b>132</b> lines covered</span> and
+    <b>153</b> relevant lines. 
+    <span class="green"><b>140</b> lines covered</span> and
     <span class="red"><b>13</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -113,9 +113,9 @@
       <tr>
         <td class="strong"><a href="#8546c4cf45628b2aa10bbe08a2221ceb2e002cf9" class="src_link" title="app/models/cliente.rb">app/models/cliente.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>4</td>
-        <td>3</td>
-        <td>3</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -163,9 +163,9 @@
       <tr>
         <td class="strong"><a href="#d358be02c61ebeccab5811f6af2e3f795665d540" class="src_link" title="test/models/cliente_test.rb">test/models/cliente_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>16</td>
-        <td>10</td>
-        <td>10</td>
+        <td>23</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -522,14 +522,14 @@
           <code class="ruby">      if @cliente.update(cliente_params)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="45">
-          <span class="hits">2</span>
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
           
           <code class="ruby">        format.html { redirect_to @cliente, notice: 'Cliente was successfully updated.' }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
           
           <code class="ruby">        format.json { head :no_content }</code>
         </li>
@@ -540,14 +540,14 @@
           <code class="ruby">      else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">        format.html { render action: 'edit' }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
-          
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
           
           <code class="ruby">        format.json { render json: @cliente.errors, status: :unprocessable_entity }</code>
         </li>
@@ -1263,8 +1263,8 @@
     <h3>app/models/cliente.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1281,16 +1281,40 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">validates :Nome, presence: true</code>
+          <code class="ruby">validates :Nome, :presence =&gt; { :message =&gt; 'nao pode ser nulo' }</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">validates :CPF, presence: true</code>
+          <code class="ruby">validates :CPF, :presence =&gt; { :message =&gt; 'nao pode ser nulo' }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">validates :Email, :presence =&gt; { :message =&gt; 'nao pode ser nulo' }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">validates :CPF, :length =&gt; { :is =&gt; 11, :message=&gt;'tem que ter 11 digitos' } </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">validates :CPF, :format =&gt; { :with =&gt; /\A[+-]?\d+\Z/, :message=&gt;'tem que ter so numeros' } </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -2013,8 +2037,8 @@
     <h3>test/models/cliente_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2079,7 +2103,7 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">	test &quot;Verifica se os clientes sem CPF eh salvo&quot; do</code>
+          <code class="ruby">	test &quot;Verifica se o cliente com CPF e nome eh salvo&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
@@ -2097,22 +2121,64 @@
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">	  assert !cliente.save, &quot;Cliente sem nenhum campo preenchido foi salvo&quot;</code>
+          <code class="ruby">	  cliente.Nome ='Cliente'</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">	  assert !cliente.save, &quot;Cliente com campos preenchidos corretamente nao foi salvo&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">end</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	test &quot;Verifica se os clientes sem CPF eh salvo&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	  cliente = Cliente.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	  cliente.CPF =&quot;11122233311&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	  assert !cliente.save, &quot;Cliente sem nenhum campo preenchido foi salvo&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
