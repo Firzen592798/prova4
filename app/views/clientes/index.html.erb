@@ -1,11 +1,11 @@
-<h1>Listing clientes</h1>
+<h1>Lista de Clientes Cadastrados</h1>
 
 <table>
   <thead>
     <tr>
       <th>Nome</th>
       <th>Cpf</th>
-      <th>Datanascimento</th>
+      <th>Data de Nascimento</th>
       <th>Email</th>
       <th>Endereco</th>
       <th>Telefone</th>
@@ -26,7 +26,7 @@
         <td><%= cliente.Telefone %></td>
         <td><%= link_to 'Show', cliente %></td>
         <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Tem certeza que deseja excluir?' } %></td>
       </tr>
     <% end %>
   </tbody>
