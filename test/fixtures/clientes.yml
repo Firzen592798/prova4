@@ -2,7 +2,7 @@
 
 one:
   Nome: MyString
-  CPF: MyText
+  CPF: MyString
   DataNascimento: MyDate
   Email: MyString
   Endereco: MyString
@@ -10,7 +10,7 @@ one:
 
 two:
   Nome: MyString
-  CPF: MyText
+  CPF: MyString
   DataNascimento: MyDate
   Email: MyString
   Endereco: MyString
