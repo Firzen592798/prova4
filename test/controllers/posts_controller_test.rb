@@ -20,7 +20,7 @@ class PostsControllerTest < ActionController::TestCase
     assert_difference('Post.count') do
       post :create, post: { conteudo: @post.conteudo, titulo: @post.titulo }
     end
-
+	
     assert_redirected_to post_path(assigns(:post))
   end
 
