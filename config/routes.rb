@@ -1,4 +1,6 @@
 Prova4::Application.routes.draw do
+  resources :clientes
+
   resources :posts
 
   # The priority is based upon order of creation: first created -> highest priority.
