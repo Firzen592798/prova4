@@ -34,7 +34,7 @@ class ClientesControllerTest < ActionController::TestCase
   end
 
   test "should update cliente" do
-    patch :update, id: @cliente, cliente: { conteudo: @cliente.conteudo, titulo: @cliente.titulo }
+    patch :update, id: @cliente, cliente: {Nome: @cliente.Nome, CPF: @cliente.CPF, DataNascimento: @cliente.DataNascimento, Email: @cliente.Email, Endereco: @cliente.Endereco, Telefone: @cliente.Telefone }
     assert_redirected_to cliente_path(assigns(:cliente))
   end
 
