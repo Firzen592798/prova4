@@ -5,6 +5,6 @@ env:
   - DB=sqlite
 script:
   - bundle exec rake test test
-  - bundle exec rspec
+  - bundle exec rspec spec
   
   
