@@ -35,8 +35,13 @@ class ClientesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "teste update cliente" do
-    patch :update, id: @cliente, cliente: {Nome: @cliente.Nome, CPF: @cliente.CPF, DataNascimento: @cliente.DataNascimento, Email: @cliente.Email, Endereco: @cliente.Endereco, Telefone: @cliente.Telefone }
+  test "teste update cliente erro" do
+    patch :update, id: @cliente, cliente: {Nome: '', CPF: @cliente.CPF, DataNascimento: @cliente.DataNascimento, Email: @cliente.Email, Endereco: @cliente.Endereco, Telefone: @cliente.Telefone }
+    assert_response :success
+  end
+  
+  test "teste update cliente certo" do
+    patch :update, id: @cliente, cliente: {Nome: 'Lep', CPF: '99911122211', DataNascimento: @cliente.DataNascimento, Email: 'cliente@uol.br', Endereco: 'Rua dos magos', Telefone: '87478787' }
     assert_redirected_to cliente_path(assigns(:cliente))
   end
 
