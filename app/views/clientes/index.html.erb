@@ -24,9 +24,9 @@
         <td><%= cliente.Email %></td>
         <td><%= cliente.Endereco %></td>
         <td><%= cliente.Telefone %></td>
-        <td><%= link_to 'Show', cliente %></td>
-        <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Tem certeza que deseja excluir?' } %></td>
+        <td><%= link_to 'Mostrar', cliente %></td>
+        <td><%= link_to 'Editar', edit_cliente_path(cliente) %></td>
+        <td><%= link_to 'Deletar', cliente, method: :delete, data: { confirm: 'Tem certeza que deseja excluir?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,6 @@
 
 <br>
 
-<%= link_to 'New Cliente', new_cliente_path %>
+<div class="link">
+<%= link_to 'Novo Cliente', new_cliente_path %>
+</div>
