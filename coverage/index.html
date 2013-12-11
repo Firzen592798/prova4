@@ -15,7 +15,6 @@
     </div>
     <div id="wrapper" style="display:none;">
       <div class="timestamp">Generated <abbr class="timeago" title="2013-12-10T22:04:50-03:00">2013-12-10T22:04:50-03:00</abbr></div>
-
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -117,6 +116,9 @@
         <td>11</td>
         <td>10</td>
         <td>10</td>
+        <td>11</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -138,9 +140,6 @@
         <td>24</td>
         <td>24</td>
         <td>0</td>
-        <td>27</td>
-        <td>0</td>
-        <td>1</td>
         <td>1.2</td>
       </tr>
       
@@ -1337,6 +1336,20 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
+          <code class="ruby">validates :Telefone, :format =&gt; { :with =&gt; /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/, :message=&gt;'Isso nao parece um email' } </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          <code class="ruby">validates :Email, :presence =&gt; { :message =&gt; 'nao pode ser nulo' }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">validates :Email, :format =&gt; { :with =&gt; /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/, :message=&gt;'Isso nao parece um email' } </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
