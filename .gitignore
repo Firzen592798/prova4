@@ -23,6 +23,6 @@
 public/system/*
 public/assets/*/**
 public/stylesheets/*/**
-/coverage/
+/coverage/*
 /spec/tmp/*
 
