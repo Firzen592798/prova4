@@ -5,25 +5,24 @@ class ClientesControllerTest < ActionController::TestCase
     @cliente = clientes(:one)
   end  
   
-  test "should get index" do
+  test "Teste index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:clientes)
   end
 
-  test "should get new" do
+  test "Teste new" do
     get :new
     assert_response :success
   end
 
-  #test "Teste de criacao" do
-  #  assert_difference('Cliente.count') do
-	# 	cliente :create, 
-	#	cliente:{Nome: 'Nome', CPF: '12312312312', DataNascimento: @cliente.DataNascimento, Email: 'cli@ba.com', Endereco: 'rua a', Telefone: '11112222' }
-    #end
+  test "Teste de criacao de novo cliente" do
+    assert_difference('Cliente.count') do
+	 	cliente :create, cliente: { Nome: 'Nome', CPF: '12312312312', DataNascimento: @cliente.DataNascimento, Email: 'cli@ba.com', Endereco: 'rua a', Telefone: '11112222' }
+    end
 	
-    #assert_redirected_to cliente_path(assigns(:z))
-  #end
+    assert_redirected_to cliente_path(assigns(:cliente))
+  end
   
   test "teste show cliente" do
     get :show, id: @cliente
