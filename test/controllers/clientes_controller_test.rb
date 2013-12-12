@@ -18,10 +18,16 @@ class ClientesControllerTest < ActionController::TestCase
 
   test "Teste de criacao de novo cliente" do
     assert_difference('Cliente.count') do
-	 	cliente :create, cliente: { Nome: 'Nome', CPF: '12312312312', DataNascimento: @cliente.DataNascimento, Email: 'cli@ba.com', Endereco: 'rua a', Telefone: '11112222' }
+	post :create, cliente: { Nome: 'Nome', CPF: '12312312312', DataNascimento: @cliente.DataNascimento, Email: 'cli@ba.com', Endereco: 'rua a', Telefone: '11112222' }
     end
-	
     assert_redirected_to cliente_path(assigns(:cliente))
+  end
+  
+  test "Teste de criacao de cliente invalido" do
+    assert_difference('Cliente.count', 0) do
+	post :create, cliente: { Nome: 'Nome', CPF: '', DataNascimento: @cliente.DataNascimento, Email: 'cli@ba.com', Endereco: 'rua a', Telefone: '11112222' }
+    end
+    assert_response :success
   end
   
   test "teste show cliente" do
